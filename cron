@@ -1,0 +1,3 @@
+#update ups data cache
+*/1 * * * * root /usr/local/bin/ups_cache.py update_cache > /dev/null 2>&1
+*/2 * * * * root /usr/local/bin/ups_cache.py send_to_zabbix > /dev/null 2>&1
